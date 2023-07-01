@@ -1,0 +1,5 @@
+Symlinking /home/amov/huasflylab/t265/devel/lib/libpx4_realsense_bridge.so
+Symlinking /home/amov/huasflylab/t265/devel/lib/px4_realsense_bridge/px4_realsense_bridge_node
+Symlinking /home/amov/huasflylab/t265/devel/lib/pkgconfig/px4_realsense_bridge.pc
+Symlinking /home/amov/huasflylab/t265/devel/share/px4_realsense_bridge/cmake/px4_realsense_bridgeConfig.cmake
+Symlinking /home/amov/huasflylab/t265/devel/share/px4_realsense_bridge/cmake/px4_realsense_bridgeConfig-version.cmake

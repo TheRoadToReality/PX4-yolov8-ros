@@ -1,0 +1,6 @@
+devel_space: /home/amov/huasflylab/t265/devel
+install: false
+install_space: /home/amov/huasflylab/t265/install
+profile: default
+source_space: /home/amov/huasflylab/t265/src
+workspace: /home/amov/huasflylab/t265

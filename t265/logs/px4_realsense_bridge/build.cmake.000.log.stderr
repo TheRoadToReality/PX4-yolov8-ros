@@ -1,0 +1,10 @@
+** WARNING ** io features related to ensenso will be disabled
+** WARNING ** io features related to davidSDK will be disabled
+** WARNING ** io features related to dssdk will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+** WARNING ** visualization features related to ensenso will be disabled
+** WARNING ** visualization features related to davidSDK will be disabled
+** WARNING ** visualization features related to dssdk will be disabled
+** WARNING ** visualization features related to rssdk will be disabled
