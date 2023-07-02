@@ -1,5 +1,7 @@
 # AutoDrone-px4
-这是一个关于无人机自动飞行的库——PX4——湖南文理学院——HUASFLYLAB
+基于ROS的无人机自动飞行
+![image](https://github.com/TheRoadToReality/AutoDrone-px4/assets/logo.png)
+
 # VIO (Visual Inertial Odometry)
 这个包使用t265作为视觉里程计
 ## Dependencies
