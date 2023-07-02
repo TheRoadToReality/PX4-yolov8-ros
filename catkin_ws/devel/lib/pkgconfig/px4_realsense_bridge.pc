@@ -1,0 +1,1 @@
+/home/amov/huasflylab/catkin_ws/devel/.private/px4_realsense_bridge/lib/pkgconfig/px4_realsense_bridge.pc

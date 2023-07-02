@@ -1,0 +1,1 @@
+/home/amov/huasflylab/offb/devel/.private/offboard/lib/pkgconfig/offboard.pc

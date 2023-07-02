@@ -1,0 +1,8 @@
+prefix=/home/amov/huasflylab/offb/install
+
+Name: offboard
+Description: Description of offboard
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

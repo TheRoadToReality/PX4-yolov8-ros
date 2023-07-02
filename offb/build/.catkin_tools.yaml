@@ -1,0 +1,6 @@
+devel_space: /home/amov/huasflylab/offb/devel
+install: false
+install_space: /home/amov/huasflylab/offb/install
+profile: default
+source_space: /home/amov/huasflylab/offb/src
+workspace: /home/amov/huasflylab/offb

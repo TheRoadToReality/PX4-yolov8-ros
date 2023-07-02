@@ -1,0 +1,1 @@
+/home/amov/huasflylab/catkin_ws/devel/.private/catkin_tools_prebuild/setup.zsh

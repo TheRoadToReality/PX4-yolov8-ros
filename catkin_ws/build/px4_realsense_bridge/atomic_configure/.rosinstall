@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/amov/huasflylab/catkin_ws/devel/.private/px4_realsense_bridge/setup.sh

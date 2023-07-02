@@ -1,0 +1,6 @@
+devel_space: /home/amov/huasflylab/catkin_ws/devel
+install: false
+install_space: /home/amov/huasflylab/catkin_ws/install
+profile: default
+source_space: /home/amov/huasflylab/catkin_ws/src
+workspace: /home/amov/huasflylab/catkin_ws

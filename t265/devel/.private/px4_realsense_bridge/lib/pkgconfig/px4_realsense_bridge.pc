@@ -1,8 +1,0 @@
-prefix=/home/amov/huasflylab/t265/devel/.private/px4_realsense_bridge
-
-Name: px4_realsense_bridge
-Description: Description of px4_realsense_bridge
-Version: 0.0.0
-Cflags: -I/home/amov/huasflylab/t265/src/VIO/include
-Libs: -L${prefix}/lib 
-Requires: roscpp rospy std_msgs mavros_msgs geometry_msgs mav_msgs sensor_msgs message_runtime tf

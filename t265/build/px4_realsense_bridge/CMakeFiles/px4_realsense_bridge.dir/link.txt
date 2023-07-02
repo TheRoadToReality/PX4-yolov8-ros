@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC   -O3 -DNDEBUG   -shared -Wl,-soname,libpx4_realsense_bridge.so -o /home/amov/huasflylab/t265/devel/.private/px4_realsense_bridge/lib/libpx4_realsense_bridge.so CMakeFiles/px4_realsense_bridge.dir/src/nodes/px4_realsense_bridge.cpp.o CMakeFiles/px4_realsense_bridge.dir/src/nodes/px4_realsense_bridge_node.cpp.o 
