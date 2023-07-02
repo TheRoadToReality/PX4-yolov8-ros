@@ -1,6 +1,6 @@
 # AutoDrone-px4
 # 基于ROS的无人机自动飞行
-![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png)
+![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png #pic_center)
 
 # VIO (Visual Inertial Odometry)
 这个包使用t265作为视觉里程计
