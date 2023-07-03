@@ -11,13 +11,20 @@ from mavros_msgs.msg import State
 from mavros_msgs.srv import CommandBool, CommandBoolRequest, SetMode, SetModeRequest
 from std_msgs.msg import Int32
 current_state = State()
+target = None
+x_1 = None
+x_2 = None
+y_1 = None
+y_2 = None
 def aim(msg):
-    target = msg.date
-    return target
+    global target
+    target = msg.data
+    
+
 def state_cb(msg):
     global current_state
     current_state = msg
-"回调函数定义在订阅之前"
+
 #def waypoint(msg):
 #    x_location = msg.pose.position.x
 #    y_location = msg.pose.position.y
@@ -26,8 +33,8 @@ def state_cb(msg):
 if __name__ == "__main__":
     rospy.init_node("offb_node_py")
 
-    aim_sub = rospy.Subscriber("aim", Int32, callback = aim)
-    now_pos_pub = rospy.Subscriber("mavros/local_position/pose",PoseStamped, callback=waypoint)
+    aim_sub = rospy.Subscriber("aim", Int32, aim)
+#    now_pos_pub = rospy.Subscriber("mavros/local_position/pose",PoseStamped, callback=waypoint)
     local_pos_pub = rospy.Publisher("mavros/setpoint_position/local", PoseStamped, queue_size=10)
     state_sub = rospy.Subscriber("mavros/state", State, callback = state_cb)
     rospy.wait_for_service("/mavros/cmd/arming")
@@ -35,7 +42,6 @@ if __name__ == "__main__":
 
     rospy.wait_for_service("/mavros/set_mode")
     set_mode_client = rospy.ServiceProxy("mavros/set_mode", SetMode)
-
 
     # Setpoint publishing MUST be faster than 2Hz
     rate = rospy.Rate(20)
@@ -53,11 +59,7 @@ if __name__ == "__main__":
     # Send a few setpoints before starting
 
 
-    if (target == 1):
-        x_1 = 0.43
-        y_1 = 2.04
-        x_2 = 1.52
-        y_2 = 1.08
+
     for i in range(100):
         if(rospy.is_shutdown()):
             break
@@ -86,49 +88,54 @@ if __name__ == "__main__":
                     rospy.loginfo("Vehicle armed")
                 last_req = rospy.Time.now()
                 flag = flag + 1
+		if (target == 1):
+        	  x_1 = 0.44
+                  y_1 = 1.80
+                  x_2 = 1.42
+                  y_2 = 0.91
             elif flag==1 and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
                 pose.pose.position.x = 0
                 pose.pose.position.y = 0
                 pose.pose.position.z = 0.6
                 last_req = rospy.Time.now()
                 flag = flag + 1
-            elif flag==2 and x_1 is not None and y_1 is not None and z_1 is not None and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
+            elif flag==2 and x_1 is not None and y_1 is not None  and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
                 pose.pose.position.x = x_1
                 pose.pose.position.y = y_1
                 pose.pose.position.z = 0.6
                 last_req = rospy.Time.now()
                 flag = flag + 1
-            elif flag==3 and x_1 is not None and y_1 is not None and z_1 is not None and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
+            elif flag==3 and x_1 is not None and y_1 is not None  and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
                 pose.pose.position.x = x_1
                 pose.pose.position.y = y_1
                 pose.pose.position.z = 0.3
                 last_req = rospy.Time.now()
                 flag = flag + 1
-            elif flag==4 and x_1 is not None and y_1 is not None and z_1 is not None and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
+            elif flag==4 and x_1 is not None and y_1 is not None  and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
                 pose.pose.position.x = x_1
                 pose.pose.position.y = y_1
                 pose.pose.position.z = 0.6
                 last_req = rospy.Time.now()
                 flag = flag + 1
-            elif flag==5 and x_2 is not None and y_2 is not None and z_2 is not None and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
+            elif flag==5 and x_2 is not None and y_2 is not None  and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
                 pose.pose.position.x = x_2
                 pose.pose.position.y = y_2
                 pose.pose.position.z = 0.6
                 last_req = rospy.Time.now()
                 flag = flag + 1
-            elif flag==6 and x_2 is not None and y_2 is not None and z_2 is not None and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
+            elif flag==6 and x_2 is not None and y_2 is not None  and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
                 pose.pose.position.x = x_2
                 pose.pose.position.y = y_2
                 pose.pose.position.z = 0.3
                 last_req = rospy.Time.now()
                 flag = flag + 1
-            elif flag==7 and x_2 is not None and y_2 is not None and z_2 is not None and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
+            elif flag==7 and x_2 is not None and y_2 is not None  and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
                 pose.pose.position.x = x_2
                 pose.pose.position.y = y_2
                 pose.pose.position.z = 0.6
                 last_req = rospy.Time.now()
                 flag = flag + 1
-            elif flag== 8 and x_2 is not None and y_2 is not None and z_2 is not None and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
+            elif flag== 8 and x_2 is not None and y_2 is not None  and (rospy.Time.now() - last_req) > rospy.Duration(10.0):
                 pose.pose.position.x = 0
                 pose.pose.position.y = 0
                 pose.pose.position.z = 0.6
