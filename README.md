@@ -40,7 +40,7 @@ sudo apt-get install librealsense2-dev
 1. 克隆这个仓库
 
    ```bash
-   git clone https://github.com/dbaldwin/VIO.git
+   git clone 
    ```
 
 1. 安装 MAVROS
