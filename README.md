@@ -40,7 +40,7 @@ sudo apt-get install librealsense2-dev
 1. 克隆这个仓库
 
    ```bash
-   git clone 
+   git clone  git@github.com:TheRoadToReality/AutoDrone-px4.git
    ```
 
 1. 安装 MAVROS
