@@ -11,12 +11,17 @@ wget http://fishros.com/install -O fishros && . fishros
 
 ```
 * Python-ROS:
+* For Ubuntu 18.04 and Under version
 ```bash
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 sudo apt install python-rosdep
 sudo rosdep init
 rosdep update
 rosversion -d
+```
+*For Ubnutu 20.04 and above version
+```bash
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
 * librealsense: 
 ```bash
@@ -66,8 +71,17 @@ sudo apt-get install librealsense2-dev
    ```
 
 1. Install the [realsense2_camera] 在ROS中启动T265:
+   * Kinetic(Ubuntu 16.04)
+   ```bash
+   sudo apt install ros-Kinedic-realsense2-camera
+   ```
+   * Melodic(Ubuntu 18.04)
    ```bash
    sudo apt install ros-melodic-realsense2-camera
+   ```
+   * Noetic(Ubuntu 20.04)
+   ```bash
+   sudo apt install ros-noetic-realsense2-camera
    ```
 
 1. 安装ROS点云库 (PCL):
