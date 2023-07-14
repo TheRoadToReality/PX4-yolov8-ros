@@ -49,7 +49,7 @@ sudo apt-get install librealsense2-dev
    cd AutoDrone-px4
    catkin clean
    cd src
-   git clone  https://github.com/dbaldwin/VIO
+   git clone https://github.com/dbaldwin/VIO.git
    ```
 
 1. 安装 MAVROS
