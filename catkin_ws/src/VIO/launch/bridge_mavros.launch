@@ -1,6 +1,6 @@
 <launch>
   <arg name="ns" default="/"/>
-  <arg name="fcu_url" default="/dev/ttyTHS1:500000"/>
+  <arg name="fcu_url" default="/dev/ttyACM0:921600"/>
   <arg name="gcs_url" default="udp://@192.168.86.24:14550" />   <!-- QGC running on Ubuntu -->
   <arg name="tgt_system" default="1" />
   <arg name="tgt_component" default="1" />
