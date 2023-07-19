@@ -45,7 +45,7 @@ sudo apt-get install librealsense2-dev
 1. 克隆这个仓库
 
    ```bash
-   git clone  https://github.com/TheRoadToReality/AutoDrone-px4
+   git clone  https://github.com/TheRoadToReality/AutoDrone-px4.git
    cd AutoDrone-px4
    catkin clean
 
