@@ -46,7 +46,7 @@ sudo apt-get install librealsense2-dev
 
    ```bash
    git clone  https://github.com/TheRoadToReality/AutoDrone-px4.git
-   cd AutoDrone-px4
+   cd AutoDrone-px4/catkin_ws
    catkin clean
 
    ```
