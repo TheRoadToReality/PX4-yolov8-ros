@@ -1,5 +1,5 @@
 # AutoDrone-px4
-# 基于ROS的无人机自动飞行
+# 基于ROS的无人机自主飞行框架（ROS系统T265数据转换）
 ![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png#pic_center)
 
 # VIO (Visual Inertial Odometry)
