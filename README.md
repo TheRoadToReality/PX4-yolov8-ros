@@ -116,5 +116,5 @@ sudo apt-get install librealsense2-dev
    catkin build
    Run the Scripts in Script/
    ```
-1.2023年9月4日更新：dockerfile一键部署
-2.2023年9月8日更新：更加稳定的视觉里程计
+1. 2023年9月4日更新：dockerfile一键部署
+1. 2023年9月8日更新：更加稳定的视觉里程计(融合UWB和tfmini_plus)
