@@ -11,9 +11,9 @@ namespace bridge {
 PX4_Realsense_Bridge::PX4_Realsense_Bridge(const ros::NodeHandle& nh)
     : nh_(nh) {
   // Add ekf param
-  tf_miniplus_sub_ = nh_.subscribe<const nav_msgs::Odometry&>(
-      "/tfmini_plus_data",10,
-  )
+  //tf_miniplus_sub_ = nh_.subscribe<const nav_msgs::Odometry&>(
+  //    "/tfmini_plus_data",10,
+  //)
   // initialize subscribers
   odom_sub_ = nh_.subscribe<const nav_msgs::Odometry&>(
       "/camera/odom/sample_throttled", 10, &PX4_Realsense_Bridge::odomCallback, this);
@@ -32,9 +32,9 @@ PX4_Realsense_Bridge::PX4_Realsense_Bridge(const ros::NodeHandle& nh)
 };
 
 PX4_Realsense_Bridge::~PX4_Realsense_Bridge() { }
-void tfmini_Bridge::odemCallback(const nav_msgs::Odometry& msg){
-  nav_msgs：：Odometry output = msg;  
-}
+//void tfmini_Bridge::odemCallback(const nav_msgs::Odometry& msg){
+//  nav_msgs：：Odometry output = msg;  
+//}
 
 void PX4_Realsense_Bridge::odomCallback(const nav_msgs::Odometry& msg) {
 
