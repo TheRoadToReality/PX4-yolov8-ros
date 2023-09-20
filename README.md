@@ -9,7 +9,7 @@ VIO: T265双目SLAM
 动力套:Tmotor 电机电调
 机架：x450机架
 协处理器：ESP32-microROS
-![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/drone_v1.0.png#pic_center)
+![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/drone_v1.png#pic_center)
 ## Dependencies
 * Ros:
 ```bash
