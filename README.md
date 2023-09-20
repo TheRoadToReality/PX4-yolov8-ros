@@ -2,8 +2,14 @@
 # 基于ROS的无人机自主飞行框架(兼ROS系统T265数据转换）
 ![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png#pic_center)
 
-# VIO (Visual Inertial Odometry)
-这个包使用t265作为视觉里程计
+# 硬件架构
+主控:px4
+ROS算法运行平台:Nvidia Jetson NX
+VIO: T265双目SLAM
+动力套:Tmotor 电机电调
+机架：x450机架
+协处理器：ESP32-microROS
+
 ## Dependencies
 * Ros:
 ```bash
