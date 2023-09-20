@@ -1,5 +1,5 @@
 # AutoDrone-px4
-# 基于ROS的无人机自主飞行框架(兼ROS系统T265数据转换）
+# 基于ROS的自主无人机框架
 ![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png#pic_center)
 
 # 硬件架构
