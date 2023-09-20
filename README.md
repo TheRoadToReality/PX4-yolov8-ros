@@ -100,21 +100,19 @@ sudo apt-get install librealsense2-dev
 1. 编译这个package:
 
    ```bash
-   cd /文件名/catkin_ws
+   cd ~/Autodrone_px4/catkin_ws
    catkin build px4_realsense_bridge
    ```
 
 1. 启动ROS节点:
 
    ```bash
-   source ~/文件名/catkin_ws/devel/setup.bash
+   source ./devel/catkin_ws/devel/setup.bash
    roslaunch px4_realsense_bridge bridge_mavros.launch
    ```
 1. 启动外部控制文件:
    ```bash
-   cd /文件名/offb
+   cd /Autodrone_px4/offboard
    catkin build
-   Run the Scripts in Script/
+   Run
    ```
-1. 2023年9月4日更新：dockerfile一键部署
-1. 2023年9月8日更新：更加稳定的视觉里程计(融合UWB和tfmini_plus)
