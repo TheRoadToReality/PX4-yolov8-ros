@@ -1,8 +1,6 @@
 # AutoDrone-px4
 # 基于ROS的自主无人机框架
-<p align="center">
-  <img https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png>
-</p>
+![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png#pic_center)
 # 硬件架构
 ```bash
 主控:px4
