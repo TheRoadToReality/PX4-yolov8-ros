@@ -3,12 +3,14 @@
 ![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png#pic_center)
 
 # 硬件架构
-*主控:px4
-*ROS算法运行平台:Nvidia Jetson NX
-*VIO: T265双目SLAM
-*动力套:Tmotor 电机电调
-*机架：x450机架
-*协处理器：ESP32-microROS
+```bash
+主控:px4
+ROS算法运行平台:Nvidia Jetson NX
+VIO: T265双目SLAM
+动力套:Tmotor 电机电调
+机架：x450机架
+协处理器：ESP32-microROS
+```
 ![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/drone_v1.png#pic_center)
 ## Dependencies
 * Ros:
