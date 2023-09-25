@@ -8,7 +8,7 @@
 ROS算法/视觉运行平台:Nvidia Jetson NX
 VIO: T265SLAM
 动力套:Tmotor 
-机架：x450机架
+机械结构：x450
 协处理器：ESP32-microROS
 ```
 ![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/drone_v1.png#pic_center)
@@ -132,4 +132,6 @@ sudo apt-get install librealsense2-dev
 * T265_VIO SLAM（已完成）
 * 激光雷达SLAM（待开发）
 * 集群算法（已完成）
+* 示教模式<无人机飞到曾经飞过的位置>(已完成)
+* 迁移到自制飞控(开发中..)
 * 增加中....
