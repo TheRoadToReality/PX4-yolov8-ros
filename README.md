@@ -1,9 +1,10 @@
-# AutoDrone-px4
+* AutoDrone-px4
 # 基于ROS的自主无人机框架
 ![image](https://github.com/TheRoadToReality/AutoDrone-px4/blob/main/assets/logo.png#pic_center)
 # 硬件架构
 ```bash
 主控:px4(STM32F427Vit6)
+气压计:ICM20608/ICM20609
 ROS算法/视觉运行平台:Nvidia Jetson NX
 VIO: T265SLAM
 动力套:Tmotor 
@@ -123,3 +124,12 @@ sudo apt-get install librealsense2-dev
    catkin build
    Run
    ```
+# 功能介绍
+* 自主跟踪（已完成）
+* 自主避障（已完成）
+* 路径规划（已完成）
+* 外部机械臂（待开发）
+* T265_VIO SLAM（已完成）
+* 激光雷达SLAM（待开发）
+* 集群算法（已完成）
+* 增加中....
