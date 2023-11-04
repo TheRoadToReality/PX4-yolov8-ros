@@ -88,7 +88,8 @@ sudo apt-get install librealsense2-dev
    ```
    * Noetic(Ubuntu 20.04)
    ```bash
-   sudo apt install ros-noetic-realsense2-camera
+   sudo apt install ros-noetic-realsense2-camera ros-noetic-cv-bridge libopencv-dev
+
    ```
 
 1. 安装ROS点云库 (PCL):
