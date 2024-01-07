@@ -4,9 +4,8 @@
 # 硬件架构
 ```bash
 主控:px4(STM32F427Vit6)
-气压计:ICM20608/ICM20609
 ROS算法/视觉运行平台:Nvidia Jetson NX
-VIO: T265SLAM
+VIO: T265
 动力套:Tmotor 
 机械结构：x450
 协处理器：ESP32-microROS
