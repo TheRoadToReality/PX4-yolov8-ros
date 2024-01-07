@@ -26,7 +26,7 @@ sudo rosdep init
 rosdep update
 rosversion -d
 ```
-*For Ubnutu 20.04 and above version
+* For Ubnutu 20.04 and above version
 ```bash
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
